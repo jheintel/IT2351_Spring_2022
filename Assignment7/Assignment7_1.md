@@ -9,7 +9,7 @@ But lets assume I must write this script! As best I understand:
 2) change your DELIMITER to some wakadoo symbol (not ; )
 3) create a procedure named delete_customer()
 4) within that procedure declare an IN variable requesting a customer ID
-5) declare a exception handler, a start transaction, and try to DELETE * FROM customers WHERE customer_id = IN_variable
+5) declare a exception handler, a start transaction, and try to DELETE FROM customers WHERE customer_id = IN_variable
 6) IF the error handler catches an error ROLLBACK and SELECT 'entry could not be dleted'
 7) IF the error handler has not been triggered COMMIT and SELECT 'Customer entry deleted'
 8) END the IF then END the procedure
